@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verifyaadhar">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ToolbarTheme"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:background="@drawable/back_bg_light_grey"
+                    android:padding="@dimen/dp_10"
+                    app:tint="@color/red"
+                    app:srcCompat="@drawable/ic_arrow_back_blue" />
+
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_15"
+
+            >
+
+<!--            <ImageView-->
+<!--                android:id="@+id/img"-->
+<!--                android:layout_width="@dimen/dp_70"-->
+<!--                android:layout_height="@dimen/dp_70"-->
+<!--                android:background="@drawable/primary_logo"-->
+<!--                android:layout_marginRight="@dimen/dp_10"-->
+<!--                />-->
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_25"
+                android:text="Upload E- Aadhaar"/>
+
+
+                                    <TextView
+                                        android:id="@+id/loginno"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="@color/dark_gray"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_5"
+                                        android:textSize="16sp"
+                                        android:layout_below="@id/login"
+                                        android:text="E-Verify your Aadhar (Recommened)"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:visibility="gone"
+            android:id="@+id/img_profile2"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_padding"
+            android:layout_marginBottom="@dimen/activity_padding"
+            app:cardCornerRadius="@dimen/dp_15"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/aadhar"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="You Will Recieve OTP on"
+            android:textColor="@color/dark_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="your Registered Mobile NO"
+            android:textColor="@color/dark_gray"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_25"
+            android:text="OR"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="Aadhaar Card No"
+            android:textColor="@color/smoke_gray"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/et_AadhaarCardNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/transparent"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:hint="Enter Your Aadhaar Card No"
+            android:inputType="number"
+            android:textColor="@color/txt_black"
+            android:textColorHint="@color/txt_black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15.8dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/smoke_gray" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/sp_20"
+            >
+            <TextView
+                android:id="@+id/dlf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sp_20"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="Upload Aadhar Front Image"
+                android:textColor="@color/smoke_gray"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_below="@id/dlf"
+                android:layout_width="@dimen/dp_150"
+                android:layout_gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/img_profile"
+                    android:layout_width="140dp"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_marginTop="@dimen/activity_padding"
+                    android:layout_marginBottom="@dimen/activity_padding"
+                    app:cardCornerRadius="@dimen/dp_15"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_AaadhaarFront"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/aadhar"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/ic_plus_width"
+                    android:layout_height="@dimen/ic_plus_width"
+                    android:layout_alignBottom="@id/img_profile"
+                    android:background="@color/green"
+                    android:layout_alignParentRight="true"
+                    app:cardCornerRadius="@dimen/dp_15"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_ADF"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/green"
+                        android:layout_margin="@dimen/dp_5"
+                        android:src="@drawable/ic_baseline_camera_24"
+                        app:tint="@color/white" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_150"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dlb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sp_20"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="Upload Aadhar Back Image"
+                    android:textColor="@color/smoke_gray"
+                    android:textSize="12sp" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/img_profiles"
+                    android:layout_width="140dp"
+                    android:layout_below="@id/dlb"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_marginTop="@dimen/activity_padding"
+                    android:layout_marginBottom="@dimen/activity_padding"
+                    app:cardCornerRadius="@dimen/dp_15"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_AaadhaarBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/aadhar"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/ic_plus_width"
+                    android:layout_height="@dimen/ic_plus_width"
+                    android:layout_alignBottom="@id/img_profiles"
+                    android:background="@color/green"
+                    android:layout_alignParentRight="true"
+                    app:cardCornerRadius="@dimen/dp_15"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_ADB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/green"
+                        android:layout_margin="@dimen/dp_5"
+                        android:src="@drawable/ic_baseline_camera_24"
+                        app:tint="@color/white" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            app:cardCornerRadius="@dimen/dp_12"
+            android:layout_margin="@dimen/dp_20"
+            >
+
+            <ImageView
+                android:id="@+id/bul"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:src="@drawable/bulb"
+                android:layout_gravity="center_vertical"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_70"
+                android:textSize="16sp"
+                android:layout_below="@id/login"
+                android:text="Choose E - Verify Aadhaar for faster Process"/>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30.2dp"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rectangle_green"
+            android:text="Submit Details"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

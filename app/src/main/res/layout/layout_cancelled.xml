@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:elevation="@dimen/dp_12"
+        app:cardCornerRadius="@dimen/dp_12"
+        >
+
+
+        <com.codediffusion.tyidedriver.helper.VerticalTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cancelled"
+            android:gravity="center_horizontal"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:background="@color/light_gray"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/tv_BookingDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:text="14 Sep 20121"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_BookingAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Rs : 200"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_Pick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textSize="16sp"
+                    android:text="Pick Up :"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_toRightOf="@+id/tv_Pick"
+                    android:id="@+id/tv_PickUpLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="12sp"
+                    android:maxLines="2"
+                    android:text=""/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="16sp"
+                    android:text="Drop Off :"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_toRightOf="@+id/tv_drop"
+                    android:id="@+id/tv_DropLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="12sp"
+                    android:maxLines="2"
+                    android:text=""/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="16sp"
+                    android:text="UserName:"/>
+
+                <TextView
+                    android:id="@+id/tv_userMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text=""/>
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

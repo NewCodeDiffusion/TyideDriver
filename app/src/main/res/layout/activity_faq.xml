@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarTheme"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:background="@drawable/back_bg_light_grey"
+                android:padding="@dimen/dp_10"
+                app:tint="@color/red"
+                app:srcCompat="@drawable/ic_arrow_back_blue" />
+
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="Frequently Asked \nQuestions"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_22" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/faqgif"
+            app:lottie_loop="true"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+          >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+/////////////////////////////////////////////////////
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator"
+                app:expansion_layout="@id/expansionLayout"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/listview_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:textColor="@color/black"
+                    android:text="What is Finheal Capital?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whatis_finhealcapitalans"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+///////////////////////////////////////////////////////////////////////////
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                app:expansion_headerIndicator="@id/headerIndicator2"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_layout="@id/expansionLayout2"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/listview_item_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:textColor="@color/black"
+                    android:text="Who can apply for a loan in Finheal Capital?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator2"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anyindividual"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+//////////////////////////////////////////////////////////
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator3"
+                app:expansion_layout="@id/expansionLayout3"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/listview_item_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:textColor="@color/black"
+                    android:text="Who does Finheal capital work?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator3"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout3"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/howfinhealwork"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/textview_border"
+                app:expansion_headerIndicator="@id/headerIndicator4"
+                app:expansion_layout="@id/expansionLayout4"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/listview_item_title4"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="Advantage of availing personal loan?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator4"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout4"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/advantagefinheal"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator5"
+                app:expansion_layout="@id/expansionLayout5"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/listview_item_title5"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="Which location can you apply for a loan?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator5"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finheal capital is a digital platform and is available across all cities in India."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator6"
+                app:expansion_layout="@id/expansionLayout6"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/listview_item_title6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:textColor="@color/black"
+                    android:text="Various loans you can apply?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator6"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout6"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loantype"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator7"
+                app:expansion_layout="@id/expansionLayout7"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Documents Required for the personal loan?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator7"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout7"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/documents_required"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator8"
+                app:expansion_layout="@id/expansionLayout8"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Where can I spend my loan amount ?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator8"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout8"
+                android:layout_height="wrap_content"
+
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The loan amount directly transfers into your personal savings bank account. You canuse it for any personal purpose."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator9"
+                app:expansion_layout="@id/expansionLayout9"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Facing technical issues during loan application ?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator9"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout9"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/technicalissue"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator10"
+                app:expansion_layout="@id/expansionLayout10"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Can I send you my documents over mail ?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator10"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout10"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Now we only accept documents uploaded by application."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator11"
+                app:expansion_layout="@id/expansionLayout11"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Can I send you my documents over mail ?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator11"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout11"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Now we only accept documents uploaded by application."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator12"
+                app:expansion_layout="@id/expansionLayout12"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="My loan application was not approved?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator12"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout12"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="There are many reasons as your credit score is not eligible for the loan or namemismatch of documents uploaded by you. If your loan did not get approved, don’t worry. It isnot always or necessarily a reflection of your credit worthiness Whatever the case may be,we will let you know in case your application could not be approved. Also, you may re-applyfor a loan in 6 months in such cases."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator13"
+                app:expansion_layout="@id/expansionLayout13"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Why do you need my bank account details ?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator13"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout13"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We need your bank account details transfer amount in your account."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator14"
+                app:expansion_layout="@id/expansionLayout14"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Is it necessary to have app to apply for a loan ?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator14"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout14"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, you need to install the finheal capital app on your mobile phone to apply for aPersonal Loan."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator15"
+                app:expansion_layout="@id/expansionLayout15"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Is my data safe with finheal capital ?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator15"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout15"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, your data is safe with us. We save your data to a secure connection. We only takeyour data for the purpose of loan facility."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator16"
+                app:expansion_layout="@id/expansionLayout16"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="How do I check my credit limit amount ?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator16"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout16"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can check your credit limit or maximum disbursement amount on the finheal capitalapp itself."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator17"
+                app:expansion_layout="@id/expansionLayout17"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="How is my credit limit decided?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator17"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout17"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your credit history is decided based on the documents as well as repayment historywhich is tracked by KYC documents."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator18"
+                app:expansion_layout="@id/expansionLayout18"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="How can I repay my loan?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator18"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout18"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can repay loans with repayment section or any online mode of payment like Netbanking, Debit Card, Bank Transfer etc."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator19"
+                app:expansion_layout="@id/expansionLayout19"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Do you have a cash payment option?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator19"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout19"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No, as of now we only support online payment."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator20"
+                app:expansion_layout="@id/expansionLayout20"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Are there any hidden charges?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator20"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout20"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No, there are no charges other than mentioned charges section."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator21"
+                app:expansion_layout="@id/expansionLayout21"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Can I change my loan term?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator21"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout21"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Once they get approved and after amount disbursement, the term cannot be changed."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator22"
+                app:expansion_layout="@id/expansionLayout22"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Are the transactions on Finheal Capital safe?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator22"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout22"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "The panel we used for the transaction is secured by security encryption."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator23"
+                app:expansion_layout="@id/expansionLayout23"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="How can I block/ deactivate my Finheal account?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator23"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout23"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "You have to send a request to ​contact@finhealcapital.in​  . ​Your request would beprocessed so there is no outstanding dues against your account."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator24"
+                app:expansion_layout="@id/expansionLayout24"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Where is the loan disbursed?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator24"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout24"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "The loan amount directly transferred in account, which is provided during the loanapplication process."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator25"
+                app:expansion_layout="@id/expansionLayout25"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Why do you need to verify my bank account?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator25"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout25"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "We need to ensure that the bank account that you have provided belongs to you."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator26"
+                app:expansion_layout="@id/expansionLayout26"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Criteria for a bank account to be verified?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator26"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout26"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "You should be the primary bank account holder and the account should be a Savingaccount."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+            //////////////////////////////////////////////////////////
+
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="@dimen/dp_40"
+                android:layout_width="match_parent"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="@dimen/dp_10"
+                app:expansion_headerIndicator="@id/headerIndicator27"
+                app:expansion_layout="@id/expansionLayout27"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:id="@+id/listview_item_title27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Did't receive the money immediately. Why?"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/headerIndicator27"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout27"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "In some cases you have to wait for 24 hours. In some cases, the loan may take somehours to be approved and disbursed to the bank account."
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"/>
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="vertical"/>
+            //////////////////////////////////////////////////////////
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

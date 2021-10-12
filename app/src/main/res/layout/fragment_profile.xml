@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        >
+
+        <ImageView
+            android:id="@+id/iv_driverImage"
+            android:layout_width="120dp"
+            android:scaleType="fitXY"
+             android:src="@drawable/useri"
+            android:layout_height="140dp"
+            />
+
+        <LinearLayout
+            android:layout_toRightOf="@id/iv_driverImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvNameheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:singleLine="true"
+                    android:fontFamily="@font/montserrat_extrabold"
+                    android:gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18"
+                   />
+
+                <ImageView
+                    android:id="@+id/iv_editProfile"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_editprofile_24"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:id="@+id/tv_email"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/gray_686868"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Phone"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/gray_686868"
+                    android:textSize="14sp"
+                    />
+
+
+
+                <ImageView
+                    android:layout_toLeftOf="@+id/tv_rating"
+                    android:layout_width="24dp"
+                    android:padding="@dimen/dp_2"
+                    android:layout_height="24dp"
+                    android:src="@drawable/star"/>
+                <TextView
+                    android:id="@+id/tv_rating"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.5"
+                    android:textStyle="italic"
+                    android:textSize="16dp"
+                    android:textColor="@color/red"/>
+            </RelativeLayout>
+
+
+
+
+
+            <Button
+                app:backgroundTint="@null"
+                android:background="@drawable/rectangle_green"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_height="40dp"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:text="Logout"
+                android:textSize="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_20"
+                android:id="@+id/btn_Logout"/>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/defaultColor"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/listview_image"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/listview_image"
+            android:layout_marginRight="@dimen/dp_50"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/listview_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_686868"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

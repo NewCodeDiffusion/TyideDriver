@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.CancelledFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_CancelledOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_CurrentBookingNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:text="Cancelled Booking Not Found"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="@dimen/dp_20"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</FrameLayout>

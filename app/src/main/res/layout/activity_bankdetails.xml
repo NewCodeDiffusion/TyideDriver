@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgraan"
+        tools:context=".Login">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ToolbarTheme"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:background="@drawable/back_bg_light_grey"
+                        android:padding="@dimen/dp_10"
+                        app:tint="@color/red"
+                        app:srcCompat="@drawable/ic_arrow_back_blue" />
+
+
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_15"
+                    android:outlineSpotShadowColor="@color/dark_gray"
+                    app:cardCornerRadius="@dimen/dp_12"
+                    android:layout_centerInParent="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_200"
+                            android:background="@drawable/gallery_r"
+                            android:padding="@dimen/dp_15"
+
+                            >
+
+                            <ImageView
+                                android:id="@+id/img"
+                                android:layout_width="@dimen/dp_70"
+                                android:layout_height="@dimen/dp_70"
+                                android:background="@drawable/mono_logo"
+                                android:layout_marginRight="@dimen/dp_10"
+                                />
+
+                            <TextView
+                                android:id="@+id/login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@id/img"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp_25"
+                                android:text="Bank Details"/>
+
+
+                            <TextView
+                                android:id="@+id/loginno"
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_toRightOf="@id/img"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:textSize="@dimen/sp_20"
+                                android:layout_below="@id/login"
+                                android:text="enter your basic Bank Details"/>
+
+
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="Name"
+                            android:textColor="@color/smoke_gray"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/et_userName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:hint="Enter Name Same as a Bank"
+                            android:textColor="@color/txt_black"
+                            android:textColorHint="@color/txt_black"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15.8dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/smoke_gray" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="@dimen/sp_20"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="Bank Name"
+                            android:textColor="@color/smoke_gray"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/et_BankName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:hint="Enter your Bank Name"
+
+
+                            android:textColor="@color/txt_black"
+                            android:textColorHint="@color/txt_black"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15.8dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/smoke_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="@dimen/sp_20"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="Account Number"
+                            android:textColor="@color/smoke_gray"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/et_AccountNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:hint="Enter Account Number"
+                            android:textColor="@color/txt_black"
+                            android:textColorHint="@color/txt_black"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15.8dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/smoke_gray" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="@dimen/sp_20"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="Confirm Account Number"
+                            android:textColor="@color/smoke_gray"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/et_reEnterAccountNO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:hint="Re Enter Account Number"
+                            android:textColor="@color/txt_black"
+                            android:textColorHint="@color/txt_black"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15.8dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/smoke_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="IFSC Code"
+                            android:textColor="@color/smoke_gray"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/et_ifscCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:hint="Enter IFSC Code"
+
+
+                            android:textColor="@color/txt_black"
+                            android:textColorHint="@color/txt_black"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15.8dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@color/smoke_gray" />
+
+
+
+
+
+                        <Button
+                            android:id="@+id/next"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="30.2dp"
+                            app:backgroundTint="@null"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:layout_marginRight="30dp"
+                            android:textAllCaps="false"
+                            android:background="@drawable/rectangle_green"
+                            android:text="Submit Details"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

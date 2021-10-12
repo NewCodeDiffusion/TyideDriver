@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.codediffusion.tyidedriver">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/primary_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/primary_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tyide"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.EditProfileActivity"/>
+        <activity android:name=".ui.Order" />
+        <activity android:name=".ui.Wallet" />
+        <activity android:name=".Verifyaadhar" />
+        <activity android:name=".ui.Bankdetails" />
+        <activity android:name=".ui.Uploaddl" />
+        <activity android:name=".DocsUpload" />
+        <activity android:name=".ui.ContactUs" />
+        <activity android:name=".ui.AboutUs" />
+        <activity android:name=".ui.Termsofservice" />
+        <activity android:name=".ui.PrivacyPolicy" />
+        <activity android:name=".ui.Faq" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity
+            android:name=".bottomnavigation.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Tyide.NoActionBar" />
+        <activity android:name=".walkthrough.IntroActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <service
+            android:name="com.codediffusion.tyidedriver.firebaseNotification.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.codediffusion.tyidedriver.firebaseNotification.MyFirebaseMessenging"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="Instantiatable,MissingClass">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

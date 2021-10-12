@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgraan"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ToolbarTheme"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/Iv_Back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:background="@drawable/back_bg_light_grey"
+                    android:padding="@dimen/dp_10"
+                    app:tint="@color/red"
+                    app:srcCompat="@drawable/ic_arrow_back_blue" />
+
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:outlineSpotShadowColor="@color/dark_gray"
+                app:cardCornerRadius="@dimen/dp_12"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_200"
+                        android:background="@drawable/gallery_r"
+                        android:padding="@dimen/dp_15"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="@dimen/dp_70"
+                            android:layout_height="@dimen/dp_70"
+                            android:background="@drawable/mono_logo"
+                            android:layout_marginRight="@dimen/dp_10"
+                            />
+
+                        <TextView
+                            android:id="@+id/login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/img"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_25"
+                            android:text="Upload Your Documents"/>
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/loginno"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:layout_toRightOf="@id/img"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/dp_5"-->
+<!--                            android:textSize="@dimen/sp_20"-->
+<!--                            android:layout_below="@id/login"-->
+<!--                            android:text="Upload DL Documents"/>-->
+
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="DL No"
+                        android:textColor="@color/smoke_gray"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_DlNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:hint="Enter Your DL No"
+                        android:textColor="@color/txt_black"
+                        android:textColorHint="@color/txt_black"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15.8dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/smoke_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                        <LinearLayout
+                            android:layout_margin="@dimen/dp_10"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/dlf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/sp_20"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:text="Upload DL Front Image"
+                                android:textColor="@color/smoke_gray"
+                                android:textSize="12sp" />
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_alignParentLeft="true"
+                                android:layout_height="wrap_content">
+
+
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:id="@+id/img_profile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_100"
+                                    android:layout_marginTop="@dimen/activity_padding"
+                                    android:layout_marginBottom="@dimen/activity_padding"
+                                    app:cardCornerRadius="@dimen/dp_15"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/iv_dlFrontImage"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/license"
+                                        />
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="@dimen/ic_plus_width"
+                                    android:layout_height="@dimen/ic_plus_width"
+                                    android:layout_alignBottom="@id/img_profile"
+                                    android:background="@color/green"
+                                    android:layout_alignParentRight="true"
+                                    app:cardCornerRadius="@dimen/dp_15"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/img_DlF"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/green"
+                                        android:layout_margin="@dimen/dp_5"
+                                        android:src="@drawable/ic_baseline_camera_24"
+                                        app:tint="@color/white" />
+
+                                </com.google.android.material.card.MaterialCardView>
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_margin="@dimen/dp_10"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/dlb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/sp_20"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:text="Upload DL Back Image"
+                                android:textColor="@color/smoke_gray"
+                                android:textSize="12sp" />
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/img_profiles"
+                                android:layout_width="match_parent"
+                                android:layout_below="@id/dlb"
+                                android:layout_height="@dimen/dp_100"
+                                android:layout_marginTop="@dimen/activity_padding"
+                                android:layout_marginBottom="@dimen/activity_padding"
+                                app:cardCornerRadius="@dimen/dp_15"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/iv_dlBackImage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/license"
+                                    />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/ic_plus_width"
+                                android:layout_height="@dimen/ic_plus_width"
+                                android:layout_alignBottom="@id/img_profiles"
+                                android:background="@color/green"
+                                android:layout_alignParentRight="true"
+                                app:cardCornerRadius="@dimen/dp_15"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/img_DlB"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/green"
+                                    android:layout_margin="@dimen/dp_5"
+                                    android:src="@drawable/ic_baseline_camera_24"
+                                    app:tint="@color/white" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="Pan Card No"
+                        android:textColor="@color/smoke_gray"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_PanCArdNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:hint="Enter Your Pan Card No"
+                        android:textColor="@color/txt_black"
+                        android:textColorHint="@color/txt_black"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15.8dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/smoke_gray" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                        <LinearLayout
+                            android:layout_margin="@dimen/dp_10"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/paf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/sp_20"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:text="Upload Pan Card Front Image"
+                                android:textColor="@color/smoke_gray"
+                                android:textSize="12sp" />
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_alignParentLeft="true"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:id="@+id/img_pf"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_100"
+                                    android:layout_marginTop="@dimen/activity_padding"
+                                    android:layout_marginBottom="@dimen/activity_padding"
+                                    app:cardCornerRadius="@dimen/dp_15"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/iv_painCardFront"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/panp"
+                                        />
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="@dimen/ic_plus_width"
+                                    android:layout_height="@dimen/ic_plus_width"
+                                    android:layout_alignBottom="@id/img_pf"
+                                    android:background="@color/green"
+                                    android:layout_alignParentRight="true"
+                                    app:cardCornerRadius="@dimen/dp_15"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/img_PCF"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/green"
+                                        android:layout_margin="@dimen/dp_5"
+                                        android:src="@drawable/ic_baseline_camera_24"
+                                        app:tint="@color/white" />
+
+                                </com.google.android.material.card.MaterialCardView>
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_margin="@dimen/dp_10"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/pfb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/sp_20"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:text="Upload Pan Card Back Image"
+                                android:textColor="@color/smoke_gray"
+                                android:textSize="12sp" />
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/img_pfs2"
+                                android:layout_width="match_parent"
+                                android:layout_below="@id/pfb"
+                                android:layout_height="@dimen/dp_100"
+                                android:layout_marginTop="@dimen/activity_padding"
+                                android:layout_marginBottom="@dimen/activity_padding"
+                                app:cardCornerRadius="@dimen/dp_15"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/iv_painCardBack"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/panp"
+                                    />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/ic_plus_width"
+                                android:layout_height="@dimen/ic_plus_width"
+                                android:layout_alignBottom="@id/img_pfs2"
+                                android:background="@color/green"
+                                android:layout_alignParentRight="true"
+                                app:cardCornerRadius="@dimen/dp_15"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/img_PCB"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/green"
+                                    android:layout_margin="@dimen/dp_5"
+                                    android:src="@drawable/ic_baseline_camera_24"
+                                    app:tint="@color/white" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <Button
+                        android:id="@+id/next"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30.2dp"
+                        app:backgroundTint="@null"
+                        android:layout_marginBottom="@dimen/dp_15"
+                        android:layout_marginRight="30dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/rectangle_green"
+                        android:text="Submit Details"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

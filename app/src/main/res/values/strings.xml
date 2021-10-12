@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Tyide</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="termscond">Terms</string>
+    <string name="rateus">Rate US</string>
+    <string name="logout">Logout</string>
+    <string name="privacypol">Privacy Policy</string>
+    <string name="payhis">Payment History</string>
+    <string name="loanhis">Loan History</string>
+    <string name="contact">Contact Us</string>
+    <string name="faqcom">F.A.Q</string>
+    <string name="aboutud">About Us</string>
+    <string name="Rs">\u20B9</string>
+
+    <string name="howfinhealwork">Finheal Capital is an online lending platform. From where you can get instant personalloan in just a few steps.&lt;br /&gt;
+    a. Install the Finheal Capital app from the Play Store.&lt;br /&gt;
+    b. Register yourself via phone number&lt;br /&gt;
+    c. Fill in your basic details to check your eligibility for availing a Personal Loanthrough Finheal Capital. This process hardly takes 3-5 minutes, after which you shallbe shown an ‘eligibility successful’ page.&lt;br /&gt;
+    d. Upon confirmation on the eligibility, you will need to upload your KYC documentsand fill in a few more details about yourself. It should not take you more than 5-10minutes to do the same.&lt;br /&gt;
+    e. Once you have uploaded the KYC documents and the other additional information,the profile will be verified depending on the authenticity and quality of the documentsuploaded.&lt;br /&gt;
+    f. Once verified, you can apply for a loan through Finheal Capital and sign a Loanagreement.&lt;br /&gt;</string>
+    <string name="anyindividual">Any Indian individual above the age of 18 years, who is salaried or has a monthlysource of income may apply for a Personal Loan through the  Finheal Capital.</string>
+    <string name="whatis_finhealcapitalans">Finheal capital is a digital lending app which provides you instant cash loan from ₹5000to ₹ 5 lakh instantly through a completely paperless process.</string>
+    <string name="advantagefinheal">When you get a loan from Finheal Capital there is no documentation. All the process ispaperless. You can get a loan anywhere from India with the help of internet connection.There is no need to stand in a long queue.</string>
+    <string name="loantype">Finheal capital offers various Personal Loans through Platform ranging from ₹5,000 to₹ 5 Lakh Personal Loan for Salaried: This is a Personal Loan with the ticket size rangingabove ₹ 5,000/- to ₹ 5 Lakh</string>
+    <string name="documents_required">Each user who applies for a personal loan will be required to submit all document:&lt;br /&gt;
+    a.Documents for KYC like pan card, adhar card.&lt;br /&gt;
+    b.Last 3 month salary slip.&lt;br /&gt;
+    c.Last 3 month bank statements.&lt;br /&gt;</string>
+    <string name="technicalissue">Send a video of that technical flow issue or screenshot of that issue with your all detailsand name on ​contact@finhealcapital.in, and we shall reach out to you at the earliest.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="home">Home</string>
+    <string name="title_activity_main_nav">MainNav</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

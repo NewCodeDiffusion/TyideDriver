@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        >
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@drawable/back_bg_light_grey"
+            android:padding="@dimen/dp_10"
+            app:tint="@color/red"
+            app:srcCompat="@drawable/ic_arrow_back_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_22"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/img"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20"
+            android:text="Tyide Wallet"/>
+
+
+        <TextView
+            android:id="@+id/tv_CurrentBalance"
+            android:layout_width="wrap_content"
+            android:textColor="@color/red"
+            android:layout_toRightOf="@id/img"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textSize="@dimen/sp_20"
+            android:layout_below="@id/login"
+            android:text=" Rs 250"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="Add Money"
+            android:textColor="@color/gradientLightBlue"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/et_AddAmount"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/transparent"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:hint="Enter Amount"
+
+
+            android:textColor="@color/txt_black"
+            android:textColorHint="@color/txt_black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginTop="15.8dp"
+
+            android:background="@color/smoke_gray" />
+
+        <Button
+            android:id="@+id/btn_AddAmount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30.2dp"
+            app:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/rectangle_green"
+            android:text="Recharge Wallet"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp"
+                android:text="Payment History"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/dark_gray" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_WalletHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <TextView
+                android:id="@+id/tv_dataNotFound"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Data Not Found"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            tools:context=".Activity.EditProfileActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                >
+                <ImageView
+                    android:id="@+id/iv_Back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:background="@drawable/back_bg_light_grey"
+                    android:padding="@dimen/dp_10"
+                    app:tint="@color/red"
+                    app:srcCompat="@drawable/ic_arrow_back_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_22"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/toolbar_profile_width"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/img_profile"
+                    android:layout_width="@dimen/toolbar_profile_width"
+                    android:layout_height="@dimen/toolbar_profile_width"
+                    android:layout_marginTop="@dimen/activity_padding"
+                    android:layout_marginBottom="@dimen/activity_padding"
+                    app:cardCornerRadius="100dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_userImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/useri"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/ic_plus_width"
+                    android:layout_height="@dimen/ic_plus_width"
+                    android:layout_alignBottom="@id/img_profile"
+                    android:background="@color/green"
+                    android:layout_alignParentRight="true"
+                    app:cardCornerRadius="@dimen/dp_100"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/green"
+                        android:layout_margin="@dimen/dp_5"
+                        android:src="@drawable/ic_baseline_camera_24"
+                        app:tint="@color/white" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="Name"
+                android:textColor="@color/smoke_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_DriverName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:hint="Enter Driver Name"
+
+
+                android:textColor="@color/txt_black"
+                android:textColorHint="@color/txt_black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15.8dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/smoke_gray" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/sp_20"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="Email"
+                android:textColor="@color/smoke_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_DriverEmain"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:hint="Enter Your Email Id"
+
+
+                android:textColor="@color/txt_black"
+                android:textColorHint="@color/txt_black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15.8dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/smoke_gray" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="PassCode"
+                android:textColor="@color/smoke_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/et_passCode"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:hint="Enter PassCode"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/txt_black"
+                android:textColorHint="@color/txt_black"
+                android:textSize="16sp" />
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15.8dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/smoke_gray" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="Current Address"
+                android:textColor="@color/smoke_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_DriverCurrentAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:hint="Enter Your Full Address"
+
+
+                android:textColor="@color/txt_black"
+                android:textColorHint="@color/txt_black"
+                android:textSize="16sp" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15.8dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/smoke_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="@dimen/sp_20"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="City"
+                        android:textColor="@color/smoke_gray"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_DriverCurAddCity"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:hint="Enter your City"
+                        android:textColor="@color/txt_black"
+                        android:textColorHint="@color/txt_black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                    android:background="@color/smoke_gray"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="@dimen/sp_20"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:text="State"
+                        android:textColor="@color/smoke_gray"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_DriverCurAddState"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:hint="Enter your State"
+
+
+                        android:textColor="@color/txt_black"
+                        android:textColorHint="@color/txt_black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15.8dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/smoke_gray" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="PinCode"
+                android:textColor="@color/smoke_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_PinCode"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:hint="Enter PinCode"
+                android:inputType="number"
+                android:textColor="@color/txt_black"
+                android:textColorHint="@color/txt_black"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/btn_Update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30.2dp"
+                app:backgroundTint="@null"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rectangle_green"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>
